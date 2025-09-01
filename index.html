@@ -17,7 +17,11 @@
         header{position:sticky;top:0;backdrop-filter:saturate(1.4) blur(10px);background:rgb(15 17 21 / .7);border-bottom:1px solid #252a3a;z-index:50}
         .nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
         .brand{display:flex;gap:12px;align-items:center}
-        .logo{width:36px;height:36px;border-radius:10px;background:radial-gradient(circle at 30% 30%, var(--accent), var(--accent-2));box-shadow:0 4px 16px rgb(123 211 137 / .35)}
+        .logo-img {
+          height: 40px;
+          width: auto;
+          border-radius: 8px; /* если нужно скругление */
+        }        
         .brand h1{font-size:18px;margin:0}
         .btn{display:inline-flex;gap:8px;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;border:1px solid transparent;cursor:pointer}
         .btn-primary{background:linear-gradient(180deg,var(--accent),var(--accent-2));color:#0a0d10;font-weight:700;box-shadow:0 8px 22px rgb(123 211 137 / .25)}
@@ -64,8 +68,8 @@
 <header>
     <div class="container nav">
         <div class="brand">
-            <div class="logo" aria-hidden="true"></div>
-            <h1>Erdos Mebel</h1>
+              <img src="images/logo.jpg" alt="Erdos Mebel" class="logo-img" />
+              <h1>Erdos Mebel</h1>
         </div>
         <div style="display:flex;gap:10px;align-items:center">
             <a class="btn btn-outline" href="https://www.instagram.com/erdos_mebel/" target="_blank" rel="noopener">Instagram</a>
