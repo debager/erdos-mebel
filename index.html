@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Erdos Mebel — корпусная и мягкая мебель на заказ</title>
+    <meta name="description" content="Изготовление мебели на заказ: кухни, шкафы, гардеробные, мягкая мебель. Замер, дизайн, производство и монтаж. Заявки в WhatsApp." />
+    <style>
+        :root{
+            --bg:#0f1115;--card:#151823;--muted:#aab0c5;--text:#e9ecf1;--accent:#7bd389;--accent-2:#54a86a;--warn:#ffdd57;
+        }
+        *{box-sizing:border-box}
+        body{margin:0;font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;color:var(--text);background:linear-gradient(180deg,#0f1115 0%, #0f1115 40%, #121522 100%);}
+        a{color:var(--accent);text-decoration:none}
+        img{max-width:100%;display:block;border-radius:16px}
+        .container{max-width:1100px;margin:0 auto;padding:24px}
+        header{position:sticky;top:0;backdrop-filter:saturate(1.4) blur(10px);background:rgb(15 17 21 / .7);border-bottom:1px solid #252a3a;z-index:50}
+        .nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
+        .brand{display:flex;gap:12px;align-items:center}
+        .logo{width:36px;height:36px;border-radius:10px;background:radial-gradient(circle at 30% 30%, var(--accent), var(--accent-2));box-shadow:0 4px 16px rgb(123 211 137 / .35)}
+        .brand h1{font-size:18px;margin:0}
+        .btn{display:inline-flex;gap:8px;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;border:1px solid transparent;cursor:pointer}
+        .btn-primary{background:linear-gradient(180deg,var(--accent),var(--accent-2));color:#0a0d10;font-weight:700;box-shadow:0 8px 22px rgb(123 211 137 / .25)}
+        .btn-outline{border-color:#2a3045;color:var(--text);background:#141827}
+        .grid{display:grid;gap:18px}
+        .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:32px 0}
+        .hero h2{font-size:40px;line-height:1.1;margin:.2em 0 .4em}
+        .hero p{color:var(--muted)}
+        .badges{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0}
+        .badge{font-size:13px;border:1px solid #2a3045;padding:8px 10px;border-radius:999px;color:#cfd6ee;background:#141827}
+        .card{background:linear-gradient(180deg,#151823, #121622);border:1px solid #262c3f;border-radius:16px;padding:18px}
+        .section h3{font-size:26px;margin:0 0 12px}
+        .gallery{grid-template-columns:repeat(3,1fr)}
+        .products{grid-template-columns:repeat(3,1fr)}
+        .product{padding:14px}
+        .product h4{margin:10px 0 6px}
+        .product p{color:var(--muted);margin:0}
+        .features{grid-template-columns:repeat(3,1fr)}
+        .feature{display:flex;gap:12px}
+        .feature .ico{width:36px;height:36px;border-radius:10px;background:#1b2031;display:grid;place-items:center;border:1px solid #2a3045}
+        .cta{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
+        form{display:grid;gap:12px}
+        input, select, textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid #2a3045;background:#121622;color:var(--text)}
+        label{font-size:14px;color:#cbd2ea}
+        .footer{color:#aeb6d4;border-top:1px solid #242a3f;margin-top:40px;padding:22px 0}
+        .floating{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:60}
+        .floating a{border-radius:999px;padding:12px 14px;background:#1a1f30;border:1px solid #2a3045}
+        .whats{background:linear-gradient(180deg,#25D366,#128C7E);color:#03140f;font-weight:700}
+
+        @media (max-width: 900px){
+            .hero{grid-template-columns:1fr}
+            .cta{grid-template-columns:1fr}
+            .products{grid-template-columns:1fr 1fr}
+            .features{grid-template-columns:1fr 1fr}
+            .gallery{grid-template-columns:1fr 1fr}
+        }
+        @media (max-width: 560px){
+            .products,.features,.gallery{grid-template-columns:1fr}
+            .hero h2{font-size:32px}
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container nav">
+        <div class="brand">
+            <div class="logo" aria-hidden="true"></div>
+            <h1>Erdos Mebel</h1>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+            <a class="btn btn-outline" href="https://www.instagram.com/erdos_mebel/" target="_blank" rel="noopener">Instagram</a>
+            <a class="btn btn-primary" href="#form">Оставить заявку</a>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <!-- HERO -->
+    <section class="hero">
+        <div>
+            <h2>Мебель на заказ в Алматы и РК</h2>
+            <p>Кухни, шкафы‑купе, гардеробные, детские, мягкая мебель. Полный цикл: замер, дизайн‑проект, производство и монтаж. Гарантия и сервис.</p>
+            <div class="badges">
+                <span class="badge">Индивидуальный дизайн</span>
+                <span class="badge">Сроки от 10 дней</span>
+                <span class="badge">Рассрочка</span>
+                <span class="badge">Доставка и сборка</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/hero-1.jpg" alt="Современная кухня на заказ" />
+        </div>
+    </section>
+
+    <!-- ГАЛЕРЕЯ  (замените картинки из Instagram на свои) -->
+    <section class="section">
+        <h3>Недавние проекты</h3>
+        <div class="grid gallery">
+            <img src="images/work-1.jpg" alt="Проект 1" />
+            <img src="images/work-2.jpg" alt="Проект 2" />
+            <img src="images/work-3.jpg" alt="Проект 3" />
+        </div>
+    </section>
+
+    <!-- ТОВАРНЫЕ БЛОКИ -->
+    <section class="section">
+        <h3>Что изготавливаем</h3>
+        <div class="grid products">
+            <div class="card product">
+                <img src="images/prod-kitchen.jpg" alt="Кухни на заказ" />
+                <h4>Кухни</h4>
+                <p>Модерн, классика, лак, эмаль, пленка ПВХ, HPL, фрезеровки.</p>
+            </div>
+            <div class="card product">
+                <img src="images/prod-wardrobe.jpg" alt="Шкафы и гардеробные" />
+                <h4>Шкафы & гардеробные</h4>
+                <p>Купе, распашные, встроенные, отдельные комнаты‑гардеробы.</p>
+            </div>
+            <div class="card product">
+                <img src="images/prod-soft.jpg" alt="Мягкая мебель" />
+                <h4>Мягкая мебель</h4>
+                <p>Диваны, кровати, изголовья, банкетки — по вашим размерам.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="section">
+        <h3>Почему мы</h3>
+        <div class="grid features">
+            <div class="feature">
+                <div class="ico">🛠️</div>
+                <div>
+                    <strong>Собственное производство</strong>
+                    <div class="muted">Контроль качества на каждом этапе</div>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="ico">📐</div>
+                <div>
+                    <strong>Бесплатный замер</strong>
+                    <div class="muted">Приезжаем в удобное время</div>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="ico">🧾</div>
+                <div>
+                    <strong>Прозрачная смета</strong>
+                    <div class="muted">Четкие сроки и стоимость</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА ЗАЯВКИ -->
+    <section id="form" class="section card">
+        <h3 style="margin-top:0">Оставить заявку в WhatsApp</h3>
+        <div class="cta">
+            <form id="leadForm">
+                <div>
+                    <label>Ваше имя</label>
+                    <input type="text" name="name" placeholder="Иван" required />
+                </div>
+                <div>
+                    <label>Телефон</label>
+                    <input type="tel" name="phone" placeholder="+7 700 000 00 00" required />
+                </div>
+                <div>
+                    <label>Тип мебели</label>
+                    <select name="type">
+                        <option value="Кухня">Кухня</option>
+                        <option value="Шкаф / гардеробная">Шкаф / гардеробная</option>
+                        <option value="Мягкая мебель">Мягкая мебель</option>
+                        <option value="Другое">Другое</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Коротко о задаче</label>
+                    <textarea name="msg" rows="4" placeholder="Размеры, материалы, сроки…"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Отправить в WhatsApp</button>
+                <div style="font-size:12px;color:var(--muted)">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</div>
+            </form>
+            <div>
+                <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px">
+                    <div class="ico">☎️</div>
+                    <div>
+                        <div><strong>Есть вопросы?</strong></div>
+                        <div class="muted">Напишите нам — ответим в течение дня</div>
+                    </div>
+                </div>
+                <img src="images/cta.jpg" alt="Проект мебели" />
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="container footer">
+    <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <div>© <span id="year"></span> Erdos Mebel. Все права защищены.</div>
+        <div style="display:flex;gap:12px;align-items:center">
+            <a href="https://www.instagram.com/erdos_mebel/" target="_blank" rel="noopener">Instagram</a>
+            <span style="opacity:.6">•</span>
+            <a href="#form">Заявка в WhatsApp</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Плавающие кнопки -->
+<div class="floating">
+    <a class="btn whats" id="waBtn" href="#">Написать в WhatsApp</a>
+    <a class="btn btn-outline" href="tel:+77055246697">Позвонить</a>
+</div>
+
+<script>
+    // === НАСТРОЙКИ ===
+    const WHATSAPP_PHONE = "+77055246697"; // ← замените на ваш номер в международном формате без пробелов и скобок
+
+    const year = new Date().getFullYear();
+    document.getElementById('year').textContent = year;
+
+    // Собрать текст заявки и открыть WhatsApp
+    function buildWhatsAppUrl(data){
+        const lines = [
+            "Здравствуйте! Хочу рассчитать проект мебели:",
+            `Имя: ${data.name}`,
+            `Телефон: ${data.phone}`,
+            `Тип: ${data.type}`,
+            data.msg ? `Комментарий: ${data.msg}` : null
+        ].filter(Boolean).join("\n");
+
+        const text = encodeURIComponent(lines);
+        // wa.me формат работает на мобилках и десктопе
+        return `https://wa.me/${WHATSAPP_PHONE.replace(/[^\d]/g,'')}?text=${text}`;
+    }
+
+    document.getElementById('leadForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        const form = e.target;
+        const data = Object.fromEntries(new FormData(form).entries());
+
+        // Простейшая проверка телефона
+        const phoneDigits = (data.phone||'').replace(/\D/g,'');
+        if (phoneDigits.length < 10){
+            alert('Пожалуйста, укажите корректный номер телефона');
+            return;
+        }
+
+        const url = buildWhatsAppUrl(data);
+        window.open(url, '_blank');
+        form.reset();
+    });
+
+    // Плавающая кнопка WhatsApp (без формы)
+    document.getElementById('waBtn').addEventListener('click', function(e){
+        e.preventDefault();
+        const url = `https://wa.me/${WHATSAPP_PHONE.replace(/[^\d]/g,'')}?text=${encodeURIComponent('Здравствуйте! Интересует мебель на заказ.')}`;
+        window.open(url, '_blank');
+    });
+</script>
+</body>
+</html>
